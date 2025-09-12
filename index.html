@@ -5,19 +5,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>MY time, aespa!</title>
   <style>
+    /* General styling */
     body {
-      font-family: 'Arial', 'Microsoft YaHei', sans-serif;
-      background-color: #fdf2f8;
-      color: #333;
+      font-family: 'Microsoft YaHei', sans-serif;
+      background-color: black;
+      color: white;
       margin: 0;
       padding: 0;
       line-height: 1.6;
     }
 
+    /* Header and navigation */
     header {
-      background-color: #fce7f3;
+      padding: 20px;
+      background-color: black;
       text-align: center;
-      padding: 40px 20px;
       border-bottom: 1px solid #f3a6d933;
     }
 
@@ -27,6 +29,37 @@
       margin: 0;
     }
 
+    nav ul {
+      list-style: none;
+      padding: 0;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center; /* Center the navigation items */
+      width: 100%;
+    }
+
+    nav ul li {
+      display: inline;
+      margin: 0 30px;
+      text-align: center;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-size: 24px;
+      font-family: 'Microsoft YaHei', sans-serif;
+      display: flex;
+      align-items: center; /* Align items vertically */
+    }
+
+    nav ul li a img {
+      width: 20px; /* Adjust the image size */
+      height: auto;
+      margin-right: 10px; /* Space between the image and text */
+    }
+
+    /* Main content */
     main {
       max-width: 800px;
       margin: 40px auto;
@@ -34,7 +67,7 @@
     }
 
     .section {
-      background: white;
+      background: rgba(0, 0, 0, 0.7);
       margin: 30px 0;
       padding: 30px;
       border-radius: 12px;
@@ -51,7 +84,7 @@
     .section p {
       font-size: 1.1em;
       margin-bottom: 20px;
-      color: #555;
+      color: #fff;
     }
 
     .link-button {
@@ -70,20 +103,31 @@
       background-color: #9d174d;
     }
 
+    /* Footer */
     footer {
       text-align: center;
       margin-top: 50px;
       padding: 20px;
       font-size: 0.9em;
       color: #888;
-      background-color: #fce7f3;
+      background-color: black;
     }
   </style>
 </head>
 <body>
 
+  <!-- Header with navigation -->
   <header>
     <h1>MY time, aespa!</h1>
+    <nav>
+      <ul>
+        <li><a href="https://www.baidu.com/" target="_blank"><img src="https://github.com/aespasynkmy/home/blob/main/synklogo.png?raw=true" alt="Logo" class="logo"></a></li>
+        <li><a href="https://weibo.com/5795013414/5181761783073918" target="_blank"><img src="https://github.com/aespasynkmy/home/blob/main/karina.png?raw=true" alt="Karina">简介</a></li>
+        <li><a href="https://www.baidu.com/" target="_blank"><img src="https://github.com/aespasynkmy/home/blob/main/giselle.png?raw=true" alt="Giselle">来路</a></li>
+        <li><a href="https://www.baidu.com/" target="_blank"><img src="https://github.com/aespasynkmy/home/blob/main/winter.png?raw=true" alt="Winter">舞台</a></li>
+        <li><a href="https://www.baidu.com/" target="_blank"><img src="https://github.com/aespasynkmy/home/blob/main/ning.png?raw=true" alt="Ning">综艺</a></li>
+      </ul>
+    </nav>
   </header>
 
   <main>
@@ -135,6 +179,7 @@
 
   </main>
 
+  <!-- Footer -->
   <footer>
     <p>© 2024 MY time, aespa！页面 | 欢迎分享与学习</p>
   </footer>
