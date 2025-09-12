@@ -53,7 +53,7 @@
 
         /* Logo styling */
         .logo {
-            width: 100px;
+            width: 100px;  /* Ensure the logo has a fixed width */
             height: auto;
             margin-right: 15px;
         }
@@ -110,6 +110,40 @@
             font-size: 0.9em;
             color: #888;
             background-color: black;
+        }
+
+        /* Media queries for responsiveness */
+        @media screen and (max-width: 768px) {
+            /* On smaller screens, adjust navigation font size and spacing */
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav ul li {
+                margin: 10px 0;
+            }
+
+            nav ul li a {
+                font-size: 18px;
+            }
+
+            .logo {
+                width: 80px; /* Slightly reduce the logo size on smaller screens */
+            }
+
+            .about h1 {
+                font-size: 2.5em;
+            }
+
+            .about p {
+                font-size: 1.1em;
+                padding: 0 15px;
+            }
+
+            .footer-img {
+                max-height: 60vh;
+            }
         }
     </style>
 </head>
