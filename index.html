@@ -58,116 +58,60 @@
             margin-right: 15px;
         }
 
-        /* About section */
-        .about {
-            text-align: center;
-            padding: 50px 20px;
-            background-color: rgba(0, 0, 0, 0.7);
-            margin: 50px 0;
-            background-image: url('https://github.com/aespasynkmy/home/blob/main/bg1.jpg?raw=true'); /* Background image */
-            background-size: cover; /* Ensures the image covers the entire section */
-            background-position: center center; /* Keeps the image centered */
-            background-attachment: fixed; /* Keeps the background fixed during scrolling */
-            height: 500px; /* Set height for the section */
-        }
-
-        .about h1 {
-            font-family: 'Bodoni Moda', serif; /* Change the font to Bodoni Moda */
-            font-size: 3.5em;
-            font-weight: bold;
-            margin-bottom: 20px;
-            letter-spacing: 2px;
-        }
-
-        .about p {
-            font-size: 1.2em;
-            line-height: 1.8;
+        /* Main content */
+        main {
             max-width: 800px;
-            margin: 0 auto;
-            font-family: 'Georgia', serif;
+            margin: 40px auto;
+            padding: 0 20px;
         }
 
-        /* Image carousel section */
-        .carousel {
-            width: 100%;
-            max-width: 1000px;
-            margin: 0 auto;
-            overflow: hidden;
-            position: relative;
-            cursor: grab; /* Add cursor style for drag */
+        .section {
+            background: rgba(0, 0, 0, 0.7);
+            margin: 30px 0;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center; /* Add text-align center to center content */
         }
 
-        .carousel-images {
-            display: flex;
-            transition: transform 0.5s ease-in-out;
+        .section h2 {
+            color: #be185d;
+            font-size: 1.5em;
+            margin-bottom: 15px;
         }
 
-        .carousel-images img {
-            width: 100%;
-            height: auto;
-            object-fit: contain; /* Ensures images maintain their aspect ratio */
+        .section p {
+            font-size: 1.1em;
+            margin-bottom: 20px;
+            color: #fff;
         }
 
-        .carousel-buttons {
-            position: absolute;
-            top: 50%;
-            width: 100%;
-            display: flex;
-            justify-content: space-between;
-            transform: translateY(-50%);
-        }
-
-        .carousel-button {
-            background-color: rgba(0, 0, 0, 0.5);
-            border: none;
-            padding: 10px;
+        .link-button {
+            display: inline-block;
+            margin: 10px 10px 10px 0;
+            padding: 10px 20px;
+            background-color: #be185d;
             color: white;
-            cursor: pointer;
+            text-decoration: none;
+            border-radius: 6px;
+            font-size: 1em;
+            transition: background-color 0.3s ease;
         }
 
-        /* Anniversary text at bottom */
-        .anniversary {
+        .link-button:hover {
+            background-color: #9d174d;
+        }
+
+        /* Footer */
+        footer {
             text-align: center;
+            margin-top: 50px;
             padding: 20px;
-            font-size: 1.4em;
-            font-family: 'KaiTi', 'Microsoft YaHei', sans-serif;
-            font-weight: bold;
+            font-size: 0.9em;
+            color: #888;
             background-color: black;
-            color: white;
-        }
-
-        /* Media queries for responsiveness */
-        @media screen and (max-width: 768px) {
-            /* On smaller screens, adjust navigation font size and spacing */
-            nav ul {
-                flex-direction: column;
-                align-items: center;
-            }
-
-            nav ul li {
-                margin: 10px 0;
-            }
-
-            nav ul li a {
-                font-size: 18px;
-            }
-
-            .about h1 {
-                font-size: 2.5em;
-            }
-
-            .about p {
-                font-size: 1.1em;
-                padding: 0 15px;
-            }
-
-            .footer-img {
-                max-height: 60vh;
-            }
         }
     </style>
-    <!-- Link to Google Fonts for Bodoni Moda -->
-    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container">
@@ -175,7 +119,6 @@
         <header>
             <nav>
                 <ul>
-                    <!-- Logo with GitHub URL -->
                     <li><a href="https://www.baidu.com/" target="_blank"><img src="https://github.com/aespasynkmy/home/blob/main/synklogo.png?raw=true" alt="Logo" class="logo"></a></li>
                     <li><a href="https://weibo.com/5795013414/5181761783073918" target="_blank"><img src="https://github.com/aespasynkmy/mytimeaespa/blob/main/karina.png?raw=true" alt="Karina">简介</a></li>
                     <li><a href="https://www.baidu.com/" target="_blank"><img src="https://github.com/aespasynkmy/mytimeaespa/blob/main/giselle.png?raw=true" alt="Giselle">来路</a></li>
@@ -185,74 +128,62 @@
             </nav>
         </header>
 
-<main>
+        <main>
+            <!-- 板块 1 -->
+            <div class="section">
+                <h2>视频 1</h2>
+                <p>第一节课 自我介绍！KARINA & WINTER</p>
+                <a href="https://www.bilibili.com/video/BV18Z4y1g76r/?spm_id_from=333.1387.upload.video_card.click&vd_source=f1d1cd489066437ea7682d8329839f9c" class="link-button" target="_blank">
+                    🎥 观看视频
+                </a>
+            </div>
 
-    <!-- 板块 1 -->
-    <div class="section">
-      <h2>视频 1</h2>
-      <p>第一节课 自我介绍！KARINA & WINTER</p>
-      <a href="https://www.bilibili.com/video/BV18Z4y1g76r/?spm_id_from=333.1387.upload.video_card.click&vd_source=f1d1cd489066437ea7682d8329839f9c" class="link-button" target="_blank">
-        🎥 观看视频
-      </a>
+            <!-- 板块 2 -->
+            <div class="section">
+                <h2>视频 2</h2>
+                <p>第一节课 自我介绍！GISELLE & NINGNING</p>
+                <a href="https://www.bilibili.com/video/BV1Tf4y1i7F9/?spm_id_from=333.1387.search.video_card.click&vd_source=f1d1cd489066437ea7682d8329839f9c" class="link-button" target="_blank">
+                    🎥 观看视频
+                </a>
+            </div>
+
+            <!-- 板块 3 -->
+            <div class="section">
+                <h2>视频 3</h2>
+                <p>第二节课 美术！互相写信</p>
+                <a href="https://www.bilibili.com/video/BV1fy4y1q7jp/?spm_id_from=333.1387.search.video_card.click&vd_source=f1d1cd489066437ea7682d8329839f9c" class="link-button" target="_blank">
+                    🎨 观看视频
+                </a>
+            </div>
+
+            <!-- 板块 4 -->
+            <div class="section">
+                <h2>视频 4</h2>
+                <p>第三节课 体育！用肢体说话</p>
+                <a href="https://www.bilibili.com/video/BV1WZ4y1g7Zr/?spm_id_from=333.1387.search.video_card.click&vd_source=f1d1cd489066437ea7682d8329839f9c" class="link-button" target="_blank">
+                    🏃 观看视频
+                </a>
+            </div>
+
+            <!-- 板块 5 -->
+            <div class="section">
+                <h2>视频 5</h2>
+                <p>第四节课 特别活动！蛋糕装饰</p>
+                <a href="https://www.bilibili.com/video/BV1sy4y1i78r/?spm_id_from=333.1387.search.video_card.click&vd_source=f1d1cd489066437ea7682d8329839f9c" class="link-button" target="_blank">
+                    🎂 观看视频
+                </a>
+            </div>
+
+        </main>
+
+        <!-- Anniversary text at bottom -->
+        <footer class="anniversary">
+            <a href="https://weibo.com/u/5795013414" target="_blank" style="color: white; text-decoration: none;">
+                aespa_synkMY<br>HAPPY 5TH ANNIVERSARY
+            </a>
+        </footer>
+
     </div>
 
-    <!-- 板块 2 -->
-    <div class="section">
-      <h2>视频 2</h2>
-      <p>第一节课 自我介绍！GISELLE & NINGNING</p>
-      <a href="https://www.bilibili.com/video/BV1Tf4y1i7F9/?spm_id_from=333.1387.search.video_card.click&vd_source=f1d1cd489066437ea7682d8329839f9c" class="link-button" target="_blank">
-        🎥 观看视频
-      </a>
-    </div>
-
-    <!-- 板块 3 -->
-    <div class="section">
-      <h2>视频 3</h2>
-      <p>第二节课 美术！互相写信</p>
-      <a href="https://www.bilibili.com/video/BV1fy4y1q7jp/?spm_id_from=333.1387.search.video_card.click&vd_source=f1d1cd489066437ea7682d8329839f9c" class="link-button" target="_blank">
-        🎨 观看视频
-      </a>
-    </div>
-
-    <!-- 板块 4 -->
-    <div class="section">
-      <h2>视频 4</h2>
-      <p>第三节课 体育！用肢体说话</p>
-      <a href="https://www.bilibili.com/video/BV1WZ4y1g7Zr/?spm_id_from=333.1387.search.video_card.click&vd_source=f1d1cd489066437ea7682d8329839f9c" class="link-button" target="_blank">
-        🏃 观看视频
-      </a>
-    </div>
-
-    <!-- 板块 5 -->
-    <div class="section">
-      <h2>视频 5</h2>
-      <p>第四节课 特别活动！蛋糕装饰</p>
-      <a href="https://www.bilibili.com/video/BV1sy4y1i78r/?spm_id_from=333.1387.search.video_card.click&vd_source=f1d1cd489066437ea7682d8329839f9c" class="link-button" target="_blank">
-        🎂 观看视频
-      </a>
-    </div>
-
-  </main>
-
-    <!-- Anniversary text at bottom -->
-    <footer class="anniversary">
-        <a href="https://weibo.com/u/5795013414" target="_blank" style="color: white; text-decoration: none;">
-            aespa_synkMY<br>HAPPY 5TH ANNIVERSARY
-        </a>
-    </footer>
-
-    <script>
-        // JavaScript for carousel slide movement
-        let currentSlide = 0;
-
-        function moveSlide(step) {
-            const slides = document.querySelectorAll('.carousel-images img');
-            const totalSlides = slides.length;
-
-            currentSlide = (currentSlide + step + totalSlides) % totalSlides;  // Loop back if out of bounds
-            const newTransform = -currentSlide * 100 + '%';
-            document.querySelector('.carousel-images').style.transform = `translateX(${newTransform})`;
-        }
-    </script>
 </body>
 </html>
