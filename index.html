@@ -76,16 +76,18 @@
             text-align: center; /* This ensures content is centered */
         }
 
+        /* Ensure the heading text color and size */
         .section h2 {
-            color: #be185d;
-            font-size: 1.5em;
+            color: #be185d; /* Red for the heading */
+            font-size: 1.5em; /* Heading font size */
             margin-bottom: 15px;
         }
 
+        /* Ensure the paragraph text color and size */
         .section p {
-            font-size: 1.1em;
+            font-size: 1.1em; /* Paragraph font size */
             margin-bottom: 20px;
-            color: #fff;
+            color: #fff; /* White for paragraph text */
         }
 
         .link-button {
@@ -215,5 +217,15 @@
         </footer>
     </div>
 
+    <script>
+        // Check if the device is iOS and modify background attachment
+        const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent);
+        if (isIOS) {
+            const sections = document.querySelectorAll('.section');
+            sections.forEach(section => {
+                section.style.backgroundAttachment = 'local'; // For iOS devices
+            });
+        }
+    </script>
 </body>
 </html>
