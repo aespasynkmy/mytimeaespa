@@ -219,5 +219,16 @@
         </footer>
     </div>
 
+    <script>
+        // Check if the device is iOS and modify background attachment
+        const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent);
+        if (isIOS) {
+            const sections = document.querySelectorAll('.section');
+            sections.forEach(section => {
+                section.style.backgroundAttachment = 'local'; // For iOS devices
+            });
+        }
+    </script>
+
 </body>
 </html>
