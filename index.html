@@ -66,11 +66,11 @@
         }
 
         .section {
-            background: url('https://github.com/aespasynkmy/home/blob/main/bg2.jpg?raw=true') no-repeat center center; /* Set background image */
-            background-size: contain; /* Ensure the image is fully visible */
-            background-attachment: fixed; /* Keep the background fixed during scrolling */
+            background: rgba(0, 0, 0, 0.7) url('https://github.com/aespasynkmy/home/blob/main/bg2.jpg?raw=true') no-repeat center center; /* Set background image */
+            background-size: cover; /* Ensure the image covers the section */
+            background-attachment: local; /* Ensure background is locally fixed */
             margin: 30px 0;
-            padding: 20px;  /* Adjust padding to reduce height */
+            padding: 30px;
             border-radius: 12px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             text-align: center; /* This ensures content is centered */
@@ -217,5 +217,15 @@
         </footer>
     </div>
 
+    <script>
+        // Check if the device is iOS and modify background attachment
+        const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent);
+        if (isIOS) {
+            const sections = document.querySelectorAll('.section');
+            sections.forEach(section => {
+                section.style.backgroundAttachment = 'local'; // For iOS devices
+            });
+        }
+    </script>
 </body>
 </html>
